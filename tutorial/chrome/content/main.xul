@@ -5,11 +5,16 @@
     id="findfile-window"
     title="Find Files"
     orient="horizontal"
+    onload="Start();"
     width="300" height="300"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 <!-- Other elements go here --> 
 
-<script type="application/javascript" src="chrome://tutorial/content/main.js"/>
+<script type="application/javascript" src="chrome://tutorial/content/js/main.js"/>
+<script type="application/javascript" src="chrome://tutorial/content/js/jquery-2.0.0.min.js"/>
+
+
+<label>Buttons</label>
 
 <!-- Buttons -->
 
@@ -20,11 +25,11 @@
     image="images/start.png"
     disabled="false"
     accesskey="t"/>
-    
+ 
  <button id="find-button" label="Find"/>  
  <button id="cancel-button" label="Cancel"/>
  
- <button image="star.png" />
+ <button id="star" image="img/star.png" onclick="hideStar();" />
  
  <button type="menu" label="Device">
   <menupopup>
@@ -33,6 +38,17 @@
     <menuitem label="Keyboard"/>
   </menupopup>
 </button>
+ 
+<description>
+  This longer section of text is displayed.
+</description>
+
+<description id="text">
+  This longer section of text is displayed.
+</description>
+
+<separator/>
+
  
 
 </window>
