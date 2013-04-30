@@ -11,6 +11,8 @@
 
 <script type="application/javascript" src="chrome://tutorial/content/main.js"/>
 
+<!-- Buttons -->
+
 <button
     id="identifier"
     class="dialog"
@@ -23,5 +25,14 @@
  <button id="cancel-button" label="Cancel"/>
  
  <button image="star.png" />
+ 
+ <button type="menu" label="Device">
+  <menupopup>
+    <menuitem label="Printer"/>
+    <menuitem label="Mouse"/>
+    <menuitem label="Keyboard"/>
+  </menupopup>
+</button>
+ 
 
 </window>
