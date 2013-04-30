@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window
+    id="findfile-window"
+    title="Find Files"
+    orient="horizontal"
+    width="300" height="300"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<!-- Other elements go here --> 
+
+<script type="application/javascript" src="chrome://tutorial/content/main.js"/>
+
+<button
+    id="identifier"
+    class="dialog"
+    label="OK"
+    image="images/start.png"
+    disabled="false"
+    accesskey="t"/>
+    
+ <button id="find-button" label="Find"/>  
+ <button id="cancel-button" label="Cancel"/>
+ 
+ <button image="star.png" />
+
+</window>
