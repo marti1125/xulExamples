@@ -3,8 +3,7 @@
 
 <window
     id="findfile-window"
-    title="Find Files"
-    orient="horizontal"
+    title="Find Files"    
     onload="Start();"
     width="300" height="300"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
@@ -49,6 +48,27 @@
 
 <separator/>
 
- 
+<label control="some-text" value="Enter some text"/>
+<textbox multiline="true"
+         value="This is some text that could wrap onto multiple lines."/>
+<label control="some-password" value="Enter a password"/>
+<textbox id="some-password" type="password" maxlength="8"/>
+
+<separator/>
+
+<label value="Search for:" control="find-text"/>
+<textbox id="find-text"/> 
+<button id="find-button" label="Find"/>
+
+<separator/>
+
+<checkbox id="case-sensitive" checked="true" label="Case sensitive"/>
+<radiogroup>
+  <radio id="orange" label="Orange"/>
+  <radio id="violet" selected="true" label="Violet"/>
+  <radio id="yellow" label="Yellow"/>
+</radiogroup>
+
+
 
 </window>
